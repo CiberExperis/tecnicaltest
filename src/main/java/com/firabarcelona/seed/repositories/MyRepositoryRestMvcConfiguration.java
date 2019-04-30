@@ -1,6 +1,7 @@
 package com.firabarcelona.seed.repositories;
 
-import com.firabarcelona.seed.entities.BlaBla;
+
+import com.firabarcelona.seed.entities.Language;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
@@ -13,7 +14,7 @@ public class MyRepositoryRestMvcConfiguration extends RepositoryRestConfigurerAd
 
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
-        config.exposeIdsFor(BlaBla.class);
+        config.exposeIdsFor(Language.class);
         config.setBasePath(seedApiVersion);
     }
 }

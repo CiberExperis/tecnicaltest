@@ -35,7 +35,7 @@ apply plugin: 'com.bmuschko.nexus'
 apply plugin: 'org.springframework.boot'
 
 dependencies {
-    compile("com.firabarcelona:api-core:1.7.2.RELEASE") {
+    compile("com.firabarcelona:api-core:1.8.0.RELEASE") {
         exclude module: 'api-core-mail'
         exclude module: 'api-core-tokens'
         exclude module: 'api-core-amazon-sqs'
